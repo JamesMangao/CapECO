@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_color_green_tablet">#C9F46D</color>
+    <color name="bg_color_green_phone">#93BB3E</color>
+    <color name="bg_color_welcome_page">#2A7E31</color>
+    <color name="font_color_green">#554D33</color>
+    <color name="modal_color">#E2D2C7</color>
+</resources>

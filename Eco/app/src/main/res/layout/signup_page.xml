@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_green_phone"
+    tools:context=".signup_page">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="237dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copilot_20250807_112245" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/SignPage"
+        android:layout_width="332dp"
+        android:layout_height="454dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/modal_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputId"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="52dp"
+            android:hint="ID number"
+            android:textColor="@color/black"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputName"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:inputType="text|textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/InputId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/InputId"
+            app:layout_constraintTop_toBottomOf="@+id/InputId" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputCourse"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:hint="Course and Year"
+            android:textColor="@color/black"
+            android:inputType="text|textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/inputName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputName"
+            app:layout_constraintTop_toBottomOf="@+id/inputName" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputPass"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/inputEmail"
+            app:layout_constraintStart_toStartOf="@+id/inputEmail"
+            app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEmail"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:inputType="text|textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/inputCourse"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputCourse"
+            app:layout_constraintTop_toBottomOf="@+id/inputCourse" />
+
+        <TextView
+            android:id="@+id/StudNAME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Student ID:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/InputId"
+            app:layout_constraintEnd_toEndOf="@+id/InputId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/InputId" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Student's Name:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputName"
+            app:layout_constraintEnd_toEndOf="@+id/inputName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputName" />
+
+        <TextView
+            android:id="@+id/titleCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Course &amp; Year:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputCourse"
+            app:layout_constraintEnd_toEndOf="@+id/inputCourse"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/inputCourse" />
+
+        <TextView
+            android:id="@+id/AuthTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/InputPass"
+            app:layout_constraintStart_toStartOf="@+id/InputPass" />
+
+        <TextView
+            android:id="@+id/authTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputEmail"
+            app:layout_constraintStart_toStartOf="@+id/inputEmail" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/font_color_green"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/SignPage"
+        app:layout_constraintStart_toStartOf="@+id/SignPage"
+        app:layout_constraintTop_toBottomOf="@+id/SignPage" />
+
+    <TextView
+        android:id="@+id/EcoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Welcome To Ecocycle"
+        android:textColor="@color/font_color_green"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

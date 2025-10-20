@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoPage">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TotalPts"
+        android:layout_width="321dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/modal_color"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="147dp"
+            android:layout_height="130dp"
+            android:src="@android:drawable/alert_light_frame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="170dp"
+            android:layout_height="18dp"
+            android:text="ECOCYCLE:"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="144dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:src="@drawable/copilot_20250807_112245"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PrizeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Prize"
+        app:layout_constraintStart_toStartOf="@+id/TotalPts"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPts" />
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="@+id/TotalPts"
+        app:layout_constraintTop_toBottomOf="@+id/TotalPts" />
+
+    <TextView
+        android:id="@+id/TotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL POINTS:"
+        android:textColor="@color/font_color_green"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/TotalPts"
+        app:layout_constraintEnd_toEndOf="@+id/TotalPts"
+        app:layout_constraintStart_toStartOf="@+id/TotalPts"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

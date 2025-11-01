@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_green_phone"
+    tools:context=".user_page">
+
+    <!-- ... other elements like TotalPts ... -->
+
+    <!-- This is your ImageView that will display the profile picture -->
+
+    <!-- Your existing StudIdBG and StudNameBG -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/TotalPointsBG"
+        android:layout_width="330dp"
+        android:layout_height="427dp"
+        android:layout_marginBottom="112dp"
+        android:background="@color/modal_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"> <!-- Slightly adjusted bias -->
+
+        <TextView
+            android:id="@+id/TotalPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="TOTAL POINTS ACCUMULATED:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Reward BTN-->
+
+        <TextView
+            android:id="@+id/NumPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/redeemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/font_color_green"
+            android:text="Redeem Reward"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/userPfp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="132dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_profile_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:id="@+id/StudNameBG"
+android:layout_width="216dp"
+android:layout_height="36dp"
+android:layout_marginTop="8dp"
+android:background="@color/modal_color"
+app:layout_constraintEnd_toEndOf="@+id/StudIdBG"
+app:layout_constraintStart_toStartOf="@+id/StudIdBG"
+app:layout_constraintTop_toBottomOf="@+id/StudIdBG"
+tools:ignore="MissingConstraints">
+
+<TextView
+    android:id="@+id/StudName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:text="Name:"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.023"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ... other elements like imageView3, Title, SubTitle ... -->
+
+    <!-- ADD A BUTTON TO UPLOAD PHOTO -->
+    <Button
+        android:id="@+id/uploadPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/font_color_green"
+        android:text="Change Picture"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/StudNameBG"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/StudNameBG"
+        app:layout_constraintTop_toBottomOf="@id/StudNameBG" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="134dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copilot_20250807_112245" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/StudIdBG"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/modal_color"
+        app:layout_constraintBottom_toBottomOf="@+id/userPfp"
+        app:layout_constraintStart_toEndOf="@+id/userPfp"
+        app:layout_constraintTop_toTopOf="@+id/userPfp"
+        app:layout_constraintVertical_bias="0.187"> <!-- Slightly adjusted bias -->
+
+        <TextView
+            android:id="@+id/StudId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="ID Number:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.023"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ...LogoutBtn ... -->
+
+    <Button
+        android:id="@+id/LogoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/font_color_green"
+        android:text="Logout"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

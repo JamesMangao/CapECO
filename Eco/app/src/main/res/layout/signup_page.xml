@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_green_phone"
+    tools:context=".signup_page">
+
+    <!-- App Logo -->
+
+    <!-- Signup Card Container -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/copilot_20250807_112245" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/SignPage"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="@color/modal_color"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <!-- Student ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputIdLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Student ID"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputNameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Full Name"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="@id/InputIdLayout"
+            app:layout_constraintStart_toStartOf="@id/InputIdLayout"
+            app:layout_constraintTop_toBottomOf="@id/InputIdLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Course & Year -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputCourseLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Course-Year"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="@id/InputNameLayout"
+            app:layout_constraintStart_toStartOf="@id/InputNameLayout"
+            app:layout_constraintTop_toBottomOf="@id/InputNameLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputEmailLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="@id/InputCourseLayout"
+            app:layout_constraintStart_toStartOf="@id/InputCourseLayout"
+            app:layout_constraintTop_toBottomOf="@id/InputCourseLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password with Toggle -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputPassLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="@id/InputEmailLayout"
+            app:layout_constraintStart_toStartOf="@id/InputEmailLayout"
+            app:layout_constraintTop_toBottomOf="@id/InputEmailLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Confirm Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/InputConfirmPassLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/tan"
+            app:layout_constraintEnd_toEndOf="@id/InputPassLayout"
+            app:layout_constraintStart_toStartOf="@id/InputPassLayout"
+            app:layout_constraintTop_toBottomOf="@id/InputPassLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/InputConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/SignUpBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/font_color_green"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            app:cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/InputConfirmPassLayout"
+            app:layout_constraintStart_toStartOf="@+id/InputConfirmPassLayout"
+            app:layout_constraintTop_toBottomOf="@+id/InputConfirmPassLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Title -->
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="JOIN ECOCYCLE"
+        android:textColor="@color/black"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/SignPage"
+        app:layout_constraintStart_toStartOf="@+id/SignPage"
+        app:layout_constraintTop_toBottomOf="@+id/SignPage" />
+
+    <TextView
+        android:id="@+id/SubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Create your account\nand start recycling!"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="@+id/Title"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,7 +22,82 @@
           <theme>@style/Theme.Eco</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/admin_dashboard.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/admin_login.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/dialog_add_edit_recyclable.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/dialog_add_edit_reward.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/dialog_add_edit_user.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/dialog_qr_code.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/item_manage_reward.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/item_recyclable.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/item_reward.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/item_transaction.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/item_user.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/login_page.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/manage_recyclables.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/manage_rewards.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/manage_transactions.xml">
+        <config>
+          <theme>@style/Theme.Eco</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/Eco/app/src/main/res/layout/manage_users.xml">
         <config>
           <theme>@style/Theme.Eco</theme>
         </config>
@@ -53,7 +128,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d038f65-ac1b-4cb2-a0a0-d9baf6afeedf" name="Changes" comment="UPDATED CODES FOR ECO APP BY CIAXYN (Nov 4, 2025)" />
+    <list default="true" id="0d038f65-ac1b-4cb2-a0a0-d9baf6afeedf" name="Changes" comment="UPDATED CODES FOR ECO APP BY CIAXYN (Nov 4, 2025)">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/google-services.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +154,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\hp\.android\avd\Medium_Phone_27.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Eco">
       <ProjectState />
@@ -92,6 +177,9 @@
       <list>
         <option value="resourceFile" />
         <option value="valueResourceFile" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -102,25 +190,36 @@
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Eco" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="last-updated" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "JamesMangao"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JamesMangao&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JamesMangao/CapECO.git",
-    "accountId": "6e657480-ac9d-46d4-9937-0059a635cf9a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JamesMangao/CapECO.git&quot;,
+    &quot;accountId&quot;: &quot;6e657480-ac9d-46d4-9937-0059a635cf9a&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$/Eco" gradleHome="C:\Users\ciaxyn\Desktop\Eco\Eco\gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Eclipse Adoptium\jdk-17.0.16.8-hotspot" gradleVersion="8.13" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="34ss3MtKutVPm47MxGO9qzPw51Y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -130,18 +229,21 @@
     "Android App.Eco.app.executor": "Run",
     "ApkExportedModule": "Eco.app",
     "ExportApk.ApkPathForEco.app": "C:\\Users\\ciaxyn\\Desktop\\Eco-main\\Eco\\app",
+    "Gradle.Download Sources.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ciaxyn/Desktop/Eco-main",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "last_opened_file_path": "C:/Users/hp/Desktop/Eco-main",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "ExportApk.BuildVariants": [
@@ -243,5 +345,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Eco" />
+    </ignored-roots>
   </component>
 </project>
